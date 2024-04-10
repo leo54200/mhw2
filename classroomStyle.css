@@ -1,3 +1,8 @@
+#chat {
+  display: inline-block;
+  width: 60%;
+}
+
 #bot_answer {
   border-radius: 10px;
   width: 96%;
@@ -31,8 +36,9 @@
 }
 
 #history_box {
+  display: inline-block;
   background-color: rgba(0, 0, 0, 0.09);
-  width: 90%;
+  width: 30%;
   margin-bottom: 10px;
   margin: auto;
   margin-top: 6em;
