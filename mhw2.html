@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Gruppo di studio virtuale</title>
-    <link rel="stylesheet" href="mhw2.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="images/logo.jpg" />
     <link
       rel="stylesheet"
@@ -13,6 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <script src="mhw2.js" defer></script>
+    <script src="home_script.js" defer></script>
+    <script src="login_script.js" defer></script>
   </head>
   <body>
     <header>
@@ -21,23 +23,24 @@
         <div></div>
         <div></div>
       </div>
+      <div id="dropdown_menu" class="hidden">
+        <a href="mhw2.html">
+          <div class="dropdown_menu_active border_top">Home</div>
+        </a>
+        <a href="classroom.html">
+          <div>Studiamo insieme</div>
+        </a>
+        <a href="contatti.html">
+          <div>Contatti</div>
+        </a>
+      </div>
       <nav id="navbar">
         <div>
           <a href="index.html"
             ><img class="middle" id="logo" src="Images/logo.png" alt=""
           /></a>
-          <a class="main_option active" href="index.html">Home</a>
-          <div class="dropdown">
-            <button class="dropbtn">
-              Studiamo insieme
-              <span class="material-symbols-outlined middle">expand_more</span>
-            </button>
-            <div class="dropdown-content">
-              <a href="matematica.html">Matematica</a>
-              <a href="Informatica.html">Tecnologie Informatiche</a>
-              <a href="#">Scienze Integrate</a>
-            </div>
-          </div>
+          <a class="main_option active" href="mhw2.html">Home</a>
+          <a class="main_option" href="classroom.html">Studiamo insieme</a>
           <a class="main_option" href="contatti.html">Contatti</a>
         </div>
         <div>
@@ -47,9 +50,7 @@
     </header>
 
     <form id="sign_in_form" class="hidden" method="POST">
-      <a href="index.html">
-        <img id="x" src="images/x.png" />
-      </a>
+      <img id="close_form" src="images/x.png" />
       <h1 class="th">Accedi</h1>
       <label class="tl">Email<br /></label>
       <input
@@ -126,7 +127,7 @@
 
       <section>
         <div class="colored_background">
-          <h4 class="center">Qualcosa</h4>
+          <h4 class="center">...</h4>
           <div id="flex_img_container">
             <img class="graph_img" src="images/graph.png" alt="" />
             <img class="graph_img" src="images/graph.png" alt="" />
